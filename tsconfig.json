@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "out": "./dist/ng2-test-app.js",
     "noImplicitAny": false,
-    "module": "commonjs",
+    "module": "system",
     "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,9 +12,5 @@
   },
   "exclude": [
     "node_modules"
-  ],
-  "files": [
-    "./ng2-components.ts",
-    "./src/ngGeneric.ts"
   ]
 }

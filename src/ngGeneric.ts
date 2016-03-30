@@ -1,8 +1,12 @@
-import { Directive } from 'angular2/core';
+import { Component } from 'angular2/core';
 
-@Directive({
-    selector: '[ng-generic]'
+@Component({
+    selector: '[ng-generic]',
+    template: '<h4>Hello World Component</h4>'
 })
 export class NgGeneric {
-    constructor() {}
+
+    constructor() {
+
+    }
 }
