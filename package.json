@@ -1,13 +1,14 @@
 {
-  "name": "ng2-components",
-  "version": "0.0.1",
-  "description": "Angular2 Components",
-  "main": "component.js",
-  "typings": "./component.d.ts",
-  "repository": "cstefanache/ng2-components",
+  "name": "ng2-component",
+  "version": "0.3.7",
+  "description": "Angular2 Image Cropper Component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstefanache/angular2-img-cropper.git"
+  },
   "scripts": {
-    "prepublish": "tsc & node make.js",
-    "all": "concurrently \"npm run watch\" \"npm run lite\" ",
+    "prepublish": "tsc",
+    "all": "concurrently \"tsc -w \" \"tsc -p runtime -w \" \"npm run lite\" ",
     "watch": "tsc -w ",
     "lite": "lite-server"
   },
@@ -15,24 +16,31 @@
     "angular2"
   ],
   "license": "MIT",
-  "dependencies": {
-    "angular2": "2.0.0-beta.9",
-    "autodts": "0.0.6",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.33.3",
-
-    "path": "^0.12.7",
-    "reflect-metadata": "0.1.2",
-    "requirejs": "^2.2.0",
-    "rxjs": "^5.0.0-beta.4",
-    "systemjs-builder": "^0.15.13",
-
-    "zone.js": "^0.5.15"
-  },
   "devDependencies": {
+    "@angular/common":  "2.0.0-rc.1",
+    "@angular/compiler":  "2.0.0-rc.1",
+    "@angular/core":  "2.0.0-rc.1",
+    "@angular/http":  "2.0.0-rc.1",
+    "@angular/platform-browser":  "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic":  "2.0.0-rc.1",
+    "@angular/router":  "2.0.0-rc.1",
+    "@angular/router-deprecated":  "2.0.0-rc.1",
+    "@angular/upgrade":  "2.0.0-rc.1",
+
+    "systemjs": "0.19.27",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    "angular2-in-memory-web-api": "0.0.7",
     "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
-    "typescript": "^1.8.9",
-    "typings":"^0.7.9"
-  }
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12"
+  },
+  "bugs": {
+    "url": "https://github.com/cstefanache/ng2-components/issues"
+  },
+  "homepage": "https://github.com/cstefanache/ng2-components#readme",
+  "author": "Cornel Stefanache"
 }

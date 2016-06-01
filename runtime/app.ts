@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {NgGeneric} from '../components';
+import {Component} from '@angular/core';
+import {NgGeneric} from '../index';
 
 
 @Component({

@@ -1,4 +1,5 @@
-import { Component } from 'angular2/core';
+///<reference path="../typings/browser.d.ts"/>
+import {Component, Renderer, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
     selector: '[ng-generic]',

@@ -1,22 +1,16 @@
 {
   "compilerOptions": {
+    "out": "dist/ng2-test-app.js",
     "noImplicitAny": false,
-    "module": "commonjs",
+    "module": "system",
     "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "declaration": true,
     "sourceMap": true,
-    "moduleResolution": "node",
-    "rootDir": "."
+    "moduleResolution": "node"
   },
-  "files": [
-    "index.ts"
-  ],
   "exclude": [
-    "node_modules",
-    "dist",
-    "runtime",
-    "typings"
+    "node_modules"
   ]
 }
