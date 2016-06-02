@@ -8,12 +8,8 @@ build.xml
 node_modules/*
 npm-debug.log
 coverage
-*.js
-!system.config.js
 !karma.conf.js
 !karma-test-shim.js
-*.map
-*.d.ts
 !make.js
 !bundles/*.js
 
@@ -25,6 +21,7 @@ coverage
 .settings
 .idea/*
 *.iml
+dist/
 
 ############
 ## Windows
