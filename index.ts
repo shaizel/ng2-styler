@@ -1,1 +1,2 @@
-export * from './src/ngGeneric';
+///<reference path="typings/browser.d.ts"/>
+export  *  from './src/Style';
