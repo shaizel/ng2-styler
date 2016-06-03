@@ -33,11 +33,11 @@ export class Styler {
         color: '#3f51b5',
         float: 'right',
 
-        '.left': {
+        '&.left': {
             float: "left"
         },
 
-        ':hover': {
+        '&:hover': {
             backgroundColor: Styler.colorGray2
         }
     }, Styler.transitions);
@@ -50,7 +50,7 @@ export class Styler {
         backgroundColor: Styler.colorGray3,
         padding: Styler.contentPadding,
         height: '35px',
-        ' .action': Styler.buttonDef
+        '.action': Styler.buttonDef
     };
 
 

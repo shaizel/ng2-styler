@@ -12,17 +12,17 @@ import {Type} from '@angular/core';
         textTransform: 'uppercase',
         boxShadow: '0px 0px 2px rgba(0,0,0,0.6)',
 
-        " .header": {
+        ".header": {
             backgroundColor: Styler.headerBackground,
             padding: Styler.headerPadding,
             color: Styler.headerColor
         },
 
-        " .content": {
+        ".content": {
             padding: Styler.contentPadding
         },
 
-        " .footer": Styler.footerDefinition
+        ".footer": Styler.footerDefinition
     }
 })
 @Component({

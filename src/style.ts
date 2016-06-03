@@ -25,7 +25,7 @@ export function Style(value:Object) {
         result += (prefix && prefix !== "") ? "}" : "";
         if (queue && queue.length > 0) {
             for (var sub of queue) {
-                result += goInto(prefix + sub.key, sub.value);
+                result += goInto(prefix + (sub.key[0] === '&' ? sub.key.substr(1) : " " + sub.key), sub.value);
             }
         }
         return result;

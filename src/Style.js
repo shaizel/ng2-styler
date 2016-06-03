@@ -22,7 +22,7 @@ function Style(value) {
         if (queue && queue.length > 0) {
             for (var _i = 0, queue_1 = queue; _i < queue_1.length; _i++) {
                 var sub = queue_1[_i];
-                result += goInto(prefix + sub.key, sub.value);
+                result += goInto(prefix + (sub.key[0] === '&' ? sub.key.substr(1) : " " + sub.key), sub.value);
             }
         }
         return result;

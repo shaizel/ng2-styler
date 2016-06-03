@@ -4,7 +4,7 @@ This is an experimental new decorator created outside the Angular 2 ecosystem th
 
 # Usage:
 
-You can create parametrized, dynamic and LESS/SCSS styles directly in your component definition. As you can see in the example below the styles can be parametrized directly in your typescript file. For a more complex example checkout the runtime folder example from the repo github.
+You can create parametrized, dynamic and LESS/SAAS styles directly in your component definition. As you can see in the example below the styles can be parametrized directly in your typescript file. For a more complex example checkout the runtime folder example from the repo github.
 
 example:
 ```typescript
@@ -21,19 +21,19 @@ var backgroundColor = "#FFFFFF",
         textTransform: 'uppercase',
         boxShadow: '0px 0px 2px rgba(0,0,0,0.6)',
 
-        " .header": {
+        ".header": {
             display: 'block',
             backgroundColor: backgroundColor,
             padding: '10px',
             color: lightGray
         },
 
-        " .content": {
+        ".content": {
             display: 'block',
             padding: padding
         },
 
-        " .footer": {
+        ".footer": {
             display: 'block',
             borderTop: '1px solid #808080'
         }
@@ -67,21 +67,26 @@ export class CardComponent extends Type {
 # How it works
 
 Since @Style decorator is defined above @Component decorator and the metadata is stored from bottom to the top, the @Style decorator execution will override styles properties (if any) defined in the  component. 
-The styler is working simillar with LESS/SCSS preprocessors (where it was inspired from) thus, the definitions can be nested and the output will be fully CSS compatible.
+The styler is working simillar with LESS/SAAS preprocessors (where it was inspired from) thus, the definitions can be nested and the output will be fully CSS compatible.
 
 ```
 ".card": {
-        display: 'inline-block',
-        backgroundColor: '#FF0000',
-        
-        " .header": {
-            display: 'block'
+    display: 'inline-block',
+    backgroundColor: '#FF0000',
+    
+    ".header": {
+        display: 'block',
+        "&:hover": {
+            backgroundColor: '#808080'
         }
+    }
 }
 
 //will output
 .card { display: inline-block; background-color: #FF0000;}
 .card .header { display: block; }
+.card .header:hover { background-color: #808080; }
+
 ```
 
 ## Advantages
@@ -90,7 +95,7 @@ The styler is working simillar with LESS/SCSS preprocessors (where it was inspir
  - Take full advantage of Angular2 View Encapsulation
  - Can be parametrized at runtime
  - Styles are defined on location
- - Syntax similar to LESS/SCSS
+ - Syntax similar to LESS/SAAS
  
 ## Disadvantages
  - @Style is not an Angular native decorator
@@ -114,6 +119,9 @@ typings install
 npm run all
 
 ```
+In order to check the runtime theme selector you can open: http://localhost:3000 for first theme and http://localhost:3000/?compact for the compact theme.
+
+
 # Roadmap
  - add helper functions for color manipulations (darken, lighten etc.)
  - better fetching of Reflect object

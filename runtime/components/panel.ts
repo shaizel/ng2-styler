@@ -9,12 +9,12 @@ import {Type} from '@angular/core';
         display: 'block',
         margin: Styler.layoutMargin,
         boxShadow: '0px 0px 2px rgba(0,0,0,0.6)',
-        " .body": {
+        ".body": {
             display: "block",
             padding: Styler.compact ? "50px" : "20px",
             fontSize: Styler.compact ? "25px" : "15px"
         },
-        " .footer": Styler.footerDefinition
+        ".footer": Styler.footerDefinition
     }
 })
 @Component({
