@@ -1,7 +1,7 @@
 {
   "name": "ng2-styler",
-  "version": "0.1.0",
-  "description": "Angular2 Image Cropper Component",
+  "version": "0.1.2",
+  "description": "Angular2 Styler",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cstefanache/ng2-styler.git"
@@ -36,7 +36,7 @@
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
-    "typings": "^0.7.12"
+    "typings": "^1.3.0"
   },
   "bugs": {
     "url": "https://github.com/cstefanache/ng2-styler/issues"

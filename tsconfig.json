@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "removeComments": true,
     "noImplicitAny": false,
     "module": "commonjs",
     "target": "es5",
@@ -11,12 +12,14 @@
     "rootDir": "."
   },
   "files": [
+    "typings/browser.d.ts",
     "index.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
     "runtime",
-    "typings"
+    "typings/main",
+    "typings/main.d.ts"
   ]
 }

@@ -43,5 +43,6 @@ import {Type} from '@angular/core';
 })
 export class CardComponent extends Type {
     constructor() {
+        super();
     }
 }

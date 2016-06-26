@@ -45,7 +45,6 @@ export class Styler {
     static footerDefinition:Object = {
         display: 'block',
         textAlign: 'right',
-        padding: '10px',
         borderTop: "1px solid " + Styler.colorGray2,
         backgroundColor: Styler.colorGray3,
         padding: Styler.contentPadding,

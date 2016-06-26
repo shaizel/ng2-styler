@@ -38,5 +38,6 @@ import {Type} from '@angular/core';
 })
 export class PanelComponent extends Type {
     constructor() {
+        super();
     }
 }
