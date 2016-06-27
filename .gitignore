@@ -40,4 +40,5 @@ Desktop.ini
 ############
 
 # Mac crap
+/typings
 .DS_Store
