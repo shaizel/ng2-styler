@@ -1,27 +1,14 @@
-import {Component} from '@angular/core';
-import {Style} from '../index';
-import {Styler} from "./styler";
-import {CardComponent} from './components/card';
-import {PanelComponent} from './components/panel';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { enableProdMode } from '@angular/core';
 
+enableProdMode();
 
-@Style({
-    ".container": {
-        padding: "10px",
-        margin: "30px",
-    }
-})
 @Component({
     selector: 'test-app',
     template: `
-    <div class="container">
-        <card> </card>
-        <card> </card>
-        <panel></panel>
-    </div>`,
-    directives: [CardComponent, PanelComponent]
+        <router-outlet></router-outlet>
+    `,
 })
-export class AppComponent {
-    constructor() {
-    }
-}
+
+export class AppComponent { }
