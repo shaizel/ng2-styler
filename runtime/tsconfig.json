@@ -12,8 +12,6 @@
     "rootDir": "."
   },
   "files": [
-    "../typings/index.d.ts",
-    "../index.d.ts",
     "./main.ts"
   ],
   "exclude": [

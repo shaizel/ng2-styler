@@ -1,4 +1,4 @@
-import {ComponentMetadata} from '@angular/core';
+import {Component} from '@angular/core';
 
 export function Style(value:Object) {
 
@@ -33,7 +33,7 @@ export function Style(value:Object) {
 
     function parseMeta(metaInformation) {
         for (var metadata of metaInformation) {
-            if (metadata instanceof ComponentMetadata) {
+            if (metadata instanceof Component) {
                 metadata.styles = [builtStyles];
             }
         }
