@@ -27,6 +27,7 @@
     "@angular/router-deprecated":  "2.0.0-rc.1",
     "@angular/upgrade":  "2.0.0-rc.1",
 
+    "@types/es6-shim": "^0.31.32",
     "systemjs": "0.19.27",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "^0.1.3",
@@ -35,8 +36,7 @@
     "angular2-in-memory-web-api": "0.0.7",
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.0"
+    "typescript": "^2.0.3"
   },
   "bugs": {
     "url": "https://github.com/cstefanache/ng2-styler/issues"
